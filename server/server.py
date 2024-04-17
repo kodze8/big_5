@@ -4,10 +4,10 @@ from model import personality_scores
 app = Flask("personality")
 
 
-
 def link_to_id(spotify_link):
-    spotify_link = str(spotify_link)
-    return spotify_link.split("?")[0].strip("https://open.spotify.com/playlist/")
+    spotify_link = spotify_link.split("?")[0]
+    spotify_link = spotify_link.replace("https://open.spotify.com/playlist/", "")
+    return spotify_link
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -27,23 +27,13 @@ def not_found_page():
     else:
         return render_template("home_not_found.html")
 
-# this works in case you work with ids or ther strings not for urls
-# @app.route("/personality_description<spotify_link>")
-# def personality_page(spotify_link):
-#     playlist_id = link_to_id(spotify_link)
-#     print(playlist_id)
-#     scores = personality_scores.big_5_scores(playlist_id)
-#     if scores is None:
-#         return redirect(url_for("not_found_page"))
-#     else:
-#         description = personality_scores.persinality_description(scores)
-#         return render_template("personality_scores.html", scores=scores, description=description)
-
 
 @app.route("/personality_description")
 def personality_page():
     spotify_link = request.args.get("spotify_link")  # Retrieve the parameter from the query string
+
     if spotify_link is None:
+        # print(spotify_link)
         return redirect(url_for("not_found_page"))
     else:
         playlist_id = link_to_id(spotify_link)

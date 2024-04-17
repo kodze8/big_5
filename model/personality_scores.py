@@ -9,7 +9,8 @@ def __mapped_listened_genres(playlistID):
     if listened_genres is None:
         return None
 
-    with open("/Users/saikodze/PycharmProjects/WhatYouListen_WhoYouAre/model/genre_dict.json", "r") as file:
+    path = "/Users/saikodze/PycharmProjects/WhatYouListen_WhoYouAre/model/genre_dict.json"
+    with open(path, "r") as file:
         mapper = json.load(file)
 
     mapped_genres = []
@@ -50,14 +51,16 @@ def big_5_scores(playlist_id):
         df.loc[genre] = df.loc[genre].apply(lambda x: weight * x)
 
     # exaggerate scores
+    exxagerating_scale = 5
     big_5 = {}
     for trait in df.columns:
-        big_5[trait] = 5 + round((((df[trait].sum() / total) * 10) * 10) / 2)
+        big_5[trait] = 5 + round((((df[trait].sum() / total) * exxagerating_scale) * 10) / 2)
     return big_5
 
 
 def persinality_description(scores):
-    with open("/Users/saikodze/PycharmProjects/WhatYouListen_WhoYouAre/model/Chat_GPT_personality_spectrum.json", "r") as file:
+    path = "/Users/saikodze/PycharmProjects/WhatYouListen_WhoYouAre/model/Chat_GPT_personality_spectrum.json"
+    with open(path, "r") as file:
         spectrum = json.load(file)
     summery =""
     for k, v in scores.items():
@@ -65,6 +68,5 @@ def persinality_description(scores):
             summery += spectrum[k][str(v)]
     return summery
 
-
-
-
+if __name__ == '__main__':
+    pass

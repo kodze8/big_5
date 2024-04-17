@@ -1,9 +1,13 @@
 import base64
-import requests
-import os
+import json
 
-SERVER_CLIENT_ID = "6f8295866afe4584937c2c020341a945"
-SERVER_CLIENT_SECRET = "96d9a3d2c6344754bd1120e98fb69dbc"
+import requests
+
+with open("/Users/saikodze/PycharmProjects/personality2big5/model/secrets.json", "r") as file:
+    secrets = json.load(file)
+
+SERVER_CLIENT_ID = secrets["id"]
+SERVER_CLIENT_SECRET = secrets["secret"]
 
 
 def __get_token_access():
@@ -71,4 +75,3 @@ def genre_listened(playlist_id):
         artist_geners = [__artist_id_to_genre(x) for ids in __extract_artist_id(playlist) for x in ids]
         genre_dict = [genre for lst in artist_geners for genre in lst]
         return genre_dict
-
