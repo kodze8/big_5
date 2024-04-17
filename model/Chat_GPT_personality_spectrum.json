@@ -1,0 +1,62 @@
+{
+    "Openness": {
+        "1": "Your level of Openness is very low. You tend to embrace tradition and convention, resisting change and preferring familiarity and routine.",
+        "2": "For Openness, you score low. You approach life cautiously and conservatively, showing resistance to new experiences.",
+        "3": "In terms of Openness, you fall below average. You're somewhat receptive to new experiences but lean towards stability and predictability.",
+        "4": "Regarding Openness, you're below average. You have a moderate level of openness to new ideas but may not actively seek out novelty.",
+        "5": "Your Openness level is average. You're open-minded and willing to consider different viewpoints, though you might not actively pursue novelty.",
+        "6": "For Openness, you're at an average level. You show moderate receptiveness to new ideas and experiences.",
+        "7": "Your Openness level is above average. You're adventurous, imaginative, and intellectually curious, enjoying exploring new ideas and cultures.",
+        "8": "In terms of Openness, you're above average. You're highly receptive to new experiences and actively seek opportunities for personal growth.",
+        "9": "You score high in Openness. You're extremely open-minded, creative, and unconventional, thriving on novelty and variety.",
+        "10": "For Openness, you're very high. You're unconventional, innovative, and constantly seeking new challenges and experiences."
+    },
+    "Conscientiousness": {
+        "1": "Your Conscientiousness level is very low. You tend to be disorganized, irresponsible, and lack self-discipline.",
+        "2": "You score low in Conscientiousness. You're spontaneous and flexible but may have difficulty with planning and organization.",
+        "3": "In terms of Conscientiousness, you fall below average. You're somewhat disorganized and struggle with responsibility and dependability.",
+        "4": "For Conscientiousness, you're below average. You have a moderate level of organization and responsibility but may lack consistency.",
+        "5": "Your Conscientiousness level is average. You have a moderate level of conscientiousness and can balance spontaneity with responsibility.",
+        "6": "In terms of Conscientiousness, you're at an average level. You're reasonably organized and responsible, fulfilling your obligations.",
+        "7": "Your Conscientiousness level is above average. You're well-organized and dependable, striving for excellence in tasks.",
+        "8": "For Conscientiousness, you're above average. You're highly organized and disciplined, setting ambitious goals and working diligently to achieve them.",
+        "9": "You score high in Conscientiousness. You're extremely conscientious, with meticulous attention to detail and high levels of discipline and reliability.",
+        "10": "For Conscientiousness, you're very high. You're perfectionistic, setting extremely high standards for yourself and others and may be overly rigid."
+    },
+    "Extraversion": {
+        "1": "Your level of Extraversion is very low. You're introverted, reserved, and prefer solitude or small group settings.",
+        "2": "For Extraversion, you score low. You're reserved and introspective, enjoying occasional socializing but valuing solitude.",
+        "3": "In terms of Extraversion, you fall below average. You're moderately introverted and may enjoy socializing in small groups but find large gatherings draining.",
+        "4": "For Extraversion, you're below average. You're balanced between introversion and extraversion, comfortable in various social settings.",
+        "5": "Your Extraversion level is average. You have a moderate level of extraversion, enjoying social interactions but also valuing alone time.",
+        "6": "In terms of Extraversion, you're at an average level. You're socially outgoing and enjoy interacting with others but also appreciate quiet time.",
+        "7": "Your Extraversion level is above average. You're highly sociable and outgoing, energized by social interactions and enjoy being the center of attention.",
+        "8": "For Extraversion, you're above average. You're very outgoing and enthusiastic, seeking out social situations and enjoying being around people.",
+        "9": "You score high in Extraversion. You're extremely extraverted, thriving on socializing and seeking out new social experiences.",
+        "10": "For Extraversion, you're very high. You're extremely sociable, outgoing, and assertive, enjoying being the life of the party."
+    },
+    "Agreeableness": {
+        "1": "Your Agreeableness level is very low. You're suspicious, competitive, and skeptical, prioritizing personal goals over interpersonal harmony.",
+        "2": "For Agreeableness, you score low. You're somewhat skeptical and competitive, less trusting of others and less cooperative.",
+        "3": "In terms of Agreeableness, you fall below average. You're moderately agreeable, valuing personal goals but also appreciating cooperation and harmony.",
+        "4": "For Agreeableness, you're below average. You're balanced between agreeableness and assertiveness, capable of standing up for yourself while also being cooperative.",
+        "5": "Your Agreeableness level is average. You show a moderate level of agreeableness, valuing cooperation and empathy while respecting personal boundaries.",
+        "6": "In terms of Agreeableness, you're at an average level. You're generally agreeable and cooperative, valuing harmonious relationships and empathizing with others.",
+        "7": "Your Agreeableness level is above average. You're highly agreeable, compassionate, and empathetic, prioritizing harmony and cooperation.",
+        "8": "For Agreeableness, you're above average. You're very empathetic and accommodating, valuing relationships and going out of your way to help others.",
+        "9": "You score high in Agreeableness. You're extremely agreeable, trusting, and compassionate, prioritizing harmony and seeking to avoid conflict.",
+        "10": "For Agreeableness, you're very high. You're overly trusting and accommodating, prioritizing others' needs over your own and prone to being taken advantage of."
+    },
+    "Stability": {
+        "1": "Your Stability level is very low. You're highly emotional, prone to mood swings, anxiety, and stress.",
+        "2": "For Stability, you score low. You're emotionally sensitive, experiencing occasional mood fluctuations and stress.",
+        "3": "In terms of Stability, you fall below average. You're moderately emotionally stable, able to cope with stress but sensitive to emotional triggers.",
+        "4": "For Stability, you're below average. You're balanced between emotional stability and sensitivity, managing stress effectively.",
+        "5": "Your Stability level is average. You show moderate emotional stability, handling everyday stressors and maintaining a balanced mood.",
+        "6": "In terms of Stability, you're at an average level. You're generally emotionally stable, coping well with stress and maintaining a positive outlook.",
+        "7": "Your Stability level is above average. You're highly resilient and emotionally stable, bouncing back from setbacks and maintaining composure.",
+        "8": "For Stability, you're above average. You're very emotionally stable, maintaining a calm demeanor even in challenging situations.",
+        "9": "You score high in Stability. You're extremely emotionally stable, rarely experiencing mood fluctuations or stress.",
+        "10": "For Stability, you're very high. You're stoic and unflappable, maintaining emotional composure in even the most stressful situations."
+    }
+}
