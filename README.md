@@ -15,9 +15,9 @@ This Python application utilizes a Flask server with a simple HTML/CSS
 frontend where users can input the link to their public Spotify playlist. 
 
 
-![](/Users/saikodze/PycharmProjects/personality2big5/home_page.png)
+![](home_page.png)
 
 Upon submission, users are redirected to a page where their personality scores and 
 descriptions, based on the Big Five personality traits, are presented.
 
-![](/Users/saikodze/PycharmProjects/personality2big5/score_page.png)
+![](score_page.png)
