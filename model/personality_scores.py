@@ -50,12 +50,24 @@ def big_5_scores(playlist_id):
     for genre, weight in mapped_genres.items():
         df.loc[genre] = df.loc[genre].apply(lambda x: weight * x)
 
-    # exaggerate scores
-    exxagerating_scale = 5
+
+    for x in df.columns:
+        min_value = df[x].values.min()
+        max_value = df[x].values.max()
+        range = max_value - min_value
+        df[x] = df[x].apply(lambda a: 10 * ((a - min_value) / range))
+
     big_5 = {}
-    for trait in df.columns:
-        big_5[trait] = 5 + round((((df[trait].sum() / total) * exxagerating_scale) * 10) / 2)
+    for x in df.columns:
+        big_5[x] = df[x].mean()
     return big_5
+
+    # # exaggerate scores
+    # exxagerating_scale = 5
+    # big_5 = {}
+    # for trait in df.columns:
+    #     big_5[trait] = 5 + round((((df[trait].sum() / total) * exxagerating_scale) * 10) / 2)
+    # return big_5
 
 
 def persinality_description(scores):
