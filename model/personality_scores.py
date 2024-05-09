@@ -40,9 +40,6 @@ def big_5_scores(playlist_id):
 
     df.set_index("Genres", inplace=True, drop=True)
     df.dropna(inplace=True)
-
-    total = sum([v for k, v in mapped_genres.items()])
-
     indexes_to_drop = [x for x in df.index if x not in mapped_genres.keys()]
     df = df.drop(indexes_to_drop)
 
@@ -50,12 +47,11 @@ def big_5_scores(playlist_id):
     for genre, weight in mapped_genres.items():
         df.loc[genre] = df.loc[genre].apply(lambda x: weight * x)
 
-
     for x in df.columns:
         min_value = df[x].values.min()
         max_value = df[x].values.max()
-        range = max_value - min_value
-        df[x] = df[x].apply(lambda a: 10 * ((a - min_value) / range))
+        column_range = max_value - min_value
+        df[x] = df[x].apply(lambda element: 10 * ((element - min_value) / column_range))
 
     big_5 = {}
     for x in df.columns:
@@ -63,17 +59,17 @@ def big_5_scores(playlist_id):
     return big_5
 
 
-
 def persinality_description(scores):
     path = "/Users/saikodze/PycharmProjects/WhatYouListen_WhoYouAre/model/Chat_GPT_personality_spectrum.json"
     with open(path, "r") as file:
         spectrum = json.load(file)
-    summery =""
+    summery = ""
     for k, v in scores.items():
         if -1 < v < 11:
             summery += spectrum[k][str(v)]
     return summery
 
+
 if __name__ == '__main__':
-    a= big_5_scores("4Fde2lUf8QhBZeZmAmqrjU")
+    a = big_5_scores("4Fde2lUf8QhBZeZmAmqrjU")
     print(a)
