@@ -59,15 +59,9 @@ def big_5_scores(playlist_id):
 
     big_5 = {}
     for x in df.columns:
-        big_5[x] = df[x].mean()
+        big_5[x] = round(df[x].mean())
     return big_5
 
-    # # exaggerate scores
-    # exxagerating_scale = 5
-    # big_5 = {}
-    # for trait in df.columns:
-    #     big_5[trait] = 5 + round((((df[trait].sum() / total) * exxagerating_scale) * 10) / 2)
-    # return big_5
 
 
 def persinality_description(scores):
@@ -81,4 +75,5 @@ def persinality_description(scores):
     return summery
 
 if __name__ == '__main__':
-    pass
+    a= big_5_scores("4Fde2lUf8QhBZeZmAmqrjU")
+    print(a)
